@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Loja Online</h1>
+    </header>
+    
+    <main>
+        <div class="produto">
+            <img src="https://acdn-us.mitiendanube.com/stores/001/065/026/products/rz01-03340100-r3u1-111-18954ffd32e7ca7b4416817600944317-640-0.jpg" alt="Produto 1">
+            <h2>Produto Exemplo</h2>
+            <p>R$ 99,90</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        
+        
+        <form id="formularioCompra" onsubmit="return validarFormulario()">
+            <h3>Finalizar Compra</h3>
+            <input type="text" id="nome" placeholder="Seu nome"><br>
+            <input type="text" id="cep" placeholder="CEP"><br>
+            <button type="submit">Confirmar</button>
+        </form>
+
+        <div id="endereco"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
